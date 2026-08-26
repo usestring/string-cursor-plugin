@@ -27,6 +27,17 @@ All three are read-only. Backed by the hosted MCP server at `https://mcp.usestri
 
 Documentation: https://portal.usestring.ai/docs
 
+
+## What's in the plugin
+
+| Component | Contents |
+| --- | --- |
+| Skills | `string-web-access` (escalation rule and troubleshooting), plus `string-search`, `string-fetch`, `string-sitemap` |
+| References | Browser actions, response formats, query construction |
+| Commands | `/string-setup`, `/web-research` |
+| Rules | Handling fetched web content as untrusted data |
+| MCP | Hosted server at `https://mcp.usestring.ai/v1/mcp` (streamable HTTP) |
+
 ## License
 
 MIT

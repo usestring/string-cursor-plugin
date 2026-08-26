@@ -1,20 +1,17 @@
 ---
-description: Set up String Web Access — check the connection and confirm all three tools respond.
+name: string-setup
+description: "Check that String Web Access is connected and all three tools respond. Usage: /string-setup"
 ---
 
-Verify that String Web Access is configured and working.
+# String Web Access setup check
 
-1. Confirm `STRING_API_KEY` is set in the environment. If it is missing, tell the user to
-   create a key at https://portal.usestring.ai and export it, then stop.
+Verify the connection using the **string-web-access** skill's guidance.
 
-2. Check the connection with the cheapest possible call — fetch `https://example.com` and
-   confirm Markdown comes back.
-
-3. Run one `web_access_search` for a simple query and confirm structured results come back
-   with `title`, `url` and `snippet`.
-
-4. Report which tools responded, and what the user should do next if any failed:
-   - Empty or error response from both → the key is likely invalid or unset
-   - Fetch works but search does not → report the specific error, do not retry in a loop
+1. Confirm `STRING_API_KEY` is set. If not, tell the user to create a key at
+   https://portal.usestring.ai and export it, then stop.
+2. Fetch `https://example.com` and confirm Markdown comes back.
+3. Run one search for a simple query and confirm results carry `title`, `url` and `snippet`.
+4. Report which tools responded. If both fail, the key is likely invalid or unset. If only one
+   fails, report the specific error — do not retry in a loop.
 
 Keep it to a few lines. This is a connectivity check, not a demo.
