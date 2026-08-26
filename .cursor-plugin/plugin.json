@@ -1,0 +1,9 @@
+{
+  "name": "string-web-access",
+  "displayName": "String Web Access",
+  "description": "Fetch, search and map any website as clean Markdown. Handles proxy rotation, anti-bot protection and CAPTCHAs so the agent gets the page, not a block screen.",
+  "version": "1.0.0",
+  "author": "Relativity Labs Inc.",
+  "license": "MIT",
+  "keywords": ["string", "string web access", "usestring"]
+}
