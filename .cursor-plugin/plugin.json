@@ -1,9 +1,30 @@
 {
   "name": "string-web-access",
   "displayName": "String Web Access",
-  "description": "Fetch, search and map any website as clean Markdown. Handles proxy rotation, anti-bot protection and CAPTCHAs so the agent gets the page, not a block screen.",
   "version": "1.0.0",
-  "author": "Relativity Labs Inc.",
+  "description": "Fetch, search and map any website as clean Markdown. Handles proxy rotation, anti-bot protection and CAPTCHAs, so the agent gets the page instead of a block screen.",
+  "author": {
+    "name": "String",
+    "email": "support@usestring.ai",
+    "url": "https://usestring.ai"
+  },
+  "homepage": "https://portal.usestring.ai/docs",
+  "repository": "https://github.com/usestring/string-cursor-plugin",
   "license": "MIT",
-  "keywords": ["string", "string web access", "usestring"]
+  "logo": "https://avatars.githubusercontent.com/u/238091928?v=4",
+  "keywords": [
+    "string",
+    "string web access",
+    "usestring",
+    "web-scraping",
+    "web-search",
+    "markdown",
+    "anti-bot",
+    "crawl",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "rules": "./rules/",
+  "commands": "./commands/",
+  "mcpServers": "mcp.json"
 }
