@@ -2,13 +2,15 @@
   "name": "string-web-access",
   "displayName": "String Web Access",
   "version": "1.0.0",
-  "description": "Fetch, search and map any website as clean Markdown. Handles proxy rotation, anti-bot protection and CAPTCHAs, so the agent gets the page instead of a block screen.",
+  "minClientVersions": {
+    "cursor": "3.13.0"
+  },
+  "description": "Web search, content extraction, and site mapping for AI agents. Gives Cursor clean Markdown from any site, including the ones that block bots.",
   "author": {
     "name": "String",
-    "email": "support@usestring.ai",
-    "url": "https://usestring.ai"
+    "email": "support@usestring.ai"
   },
-  "homepage": "https://portal.usestring.ai/docs",
+  "homepage": "https://portal.usestring.ai/docs/mcp/overview",
   "repository": "https://github.com/usestring/string-cursor-plugin",
   "license": "MIT",
   "logo": "assets/logo.png",
@@ -16,17 +18,23 @@
     "string",
     "string web access",
     "usestring",
-    "web-scraping",
     "web-search",
+    "web-scraping",
     "markdown",
-    "anti-bot",
     "crawl",
+    "mcp"
+  ],
+  "category": "integrations",
+  "tags": [
+    "string",
+    "web-search",
+    "web-scraping",
     "mcp"
   ],
   "skills": "./skills/",
   "rules": "./rules/",
   "commands": "./commands/",
-  "mcpServers": "mcp.json",
+  "mcpServers": "./mcp.json",
   "variables": {
     "type": "object",
     "properties": {
