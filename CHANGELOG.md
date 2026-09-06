@@ -2,6 +2,11 @@
 
 All notable changes to this plugin will be documented here.
 
+## 1.0.1
+
+- Corrected the browser-actions constraint: `web_access_fetch` has no `method` or `body`, so actions only exclude `headers` and `format: "raw"`.
+- Declared `STRING_API_KEY` in the manifest variables schema and matched the published plugin conventions (shipped earlier without a version bump).
+
 ## 1.0.0 — initial release
 
 - Added the `string-web-access` MCP server pointing at `https://mcp.usestring.ai/v1/mcp`.
