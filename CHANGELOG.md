@@ -2,6 +2,10 @@
 
 All notable changes to this plugin will be documented here.
 
+## 1.0.2
+
+- Added `web_access_report` guidance for sending one redacted, credit-free diagnostic after a String tool fails.
+
 ## 1.0.1
 
 - Corrected the browser-actions constraint: `web_access_fetch` has no `method` or `body`, so actions only exclude `headers` and `format: "raw"`.
