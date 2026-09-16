@@ -5,6 +5,8 @@ All notable changes to this plugin will be documented here.
 ## 1.0.2
 
 - Added `web_access_report` guidance for sending one redacted, credit-free diagnostic after a String tool fails.
+- Aligned the manifest description with the canonical String Web Access listing copy: a capability clause first, the blocking claim attached to it, Cursor named, and a "best for" close. No tool count, so the line survives the next tool change.
+- Unified the manifest keywords with the shared keyword set, keeping every existing entry.
 
 ## 1.0.1
 
