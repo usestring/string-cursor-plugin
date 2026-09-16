@@ -1,11 +1,11 @@
 {
   "name": "string-web-access",
   "displayName": "String Web Access",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "minClientVersions": {
     "cursor": "3.13.0"
   },
-  "description": "Web search, content extraction, and site mapping for AI agents. Gives Cursor clean Markdown from any site, including the ones that block bots.",
+  "description": "Search the web, fetch any URL or send it a write request, and map a site's URLs — all returned as clean, LLM-ready Markdown for Cursor. Proxy rotation, anti-bot handling, CAPTCHA solving and JavaScript rendering happen server-side, so the agent gets the page instead of a block screen. Best for sites that rate-limit, geo-gate or block automated traffic.",
   "author": {
     "name": "String",
     "email": "support@usestring.ai"
@@ -15,14 +15,28 @@
   "license": "MIT",
   "logo": "assets/logo.png",
   "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "string-ai",
+    "web-access",
+    "web-scraping",
+    "web-search",
+    "markdown",
+    "anti-bot",
+    "captcha",
+    "proxy",
+    "crawler",
+    "data-extraction",
+    "llm",
+    "ai-agents",
+    "claude",
+    "cursor",
+    "unblocker",
     "string",
     "string web access",
     "usestring",
-    "web-search",
-    "web-scraping",
-    "markdown",
-    "crawl",
-    "mcp"
+    "crawl"
   ],
   "category": "integrations",
   "tags": [
