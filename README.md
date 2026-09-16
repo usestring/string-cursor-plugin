@@ -40,7 +40,7 @@ can use that instead.
 | --- | --- |
 | `web_access_fetch` | Fetch one URL as Markdown, with optional browser actions and JSON or raw output |
 | `web_access_request` | Send a POST, PUT or PATCH with a body to a URL |
-| `web_access_search` | Search the web and get structured results back |
+| `web_access_search` | Search the web: ranked results plus the knowledge panel, AI overview, local pack and other surfaces Google rendered; optional `searchCount` (1–50) pages Google |
 | `web_access_sitemap` | Crawl a site and map its URLs as an asynchronous, quoted job |
 
 The hosted runtime is the source of truth for tool names and schemas.

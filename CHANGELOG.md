@@ -2,6 +2,10 @@
 
 All notable changes to this plugin will be documented here.
 
+## 1.0.3
+
+- `string-search` now describes every surface `web_access_search` returns beside the ranked results — knowledge panel, AI overviews with cited sources, local pack, People also ask, related searches, answer widgets, ads, videos, discussions, images, sitelinks — and the optional `searchCount` request field (1 to 50) that pages Google.
+
 ## 1.0.2
 
 - Aligned the manifest description with the canonical String Web Access listing copy: a capability clause first, the blocking claim attached to it, Cursor named, and a "best for" close. No tool count, so the line survives the next tool change.
