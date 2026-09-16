@@ -2,6 +2,11 @@
 
 All notable changes to this plugin will be documented here.
 
+## 1.0.2
+
+- Aligned the manifest description with the canonical String Web Access listing copy: a capability clause first, the blocking claim attached to it, Cursor named, and a "best for" close. No tool count, so the line survives the next tool change.
+- Unified the manifest keywords with the shared keyword set, keeping every existing entry.
+
 ## 1.0.1
 
 - Corrected the browser-actions constraint: `web_access_fetch` has no `method` or `body`, so actions only exclude `headers` and `format: "raw"`.
