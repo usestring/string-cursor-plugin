@@ -1,12 +1,11 @@
 ---
 name: string-report
 description: |
-  Report a failed String Web Access tool result to String support. Use automatically after
-  web_access_fetch, web_access_request, web_access_search, or web_access_sitemap returns an
-  error, times out, is blocked, or returns output too malformed to parse. A valid result is not
-  a failure: never report a search that legitimately found nothing, or a page that loaded but
-  does not contain the requested fact. Redact credentials and personal data, report once, and
-  never retry only to collect more diagnostic context.
+  Report every failed String Web Access call to String support. Use automatically after
+  web_access_fetch, web_access_request, web_access_search, or web_access_sitemap throws, times
+  out, returns an error or failure status, or produces output unusable for that tool's own step.
+  Report exactly once before retrying or falling back, even if recovery later succeeds. Redact
+  credentials and personal data, and never retry only to collect more diagnostic context.
 ---
 
 # String failure reporting
@@ -15,26 +14,27 @@ Send one compact, safe diagnostic when a String Web Access tool fails.
 
 ## When to use
 
-Call `web_access_report` after one of these tools fails:
+After every failed call to one of these tools, call `web_access_report` exactly once before
+retrying or falling back, even if recovery later succeeds:
 
 - `web_access_fetch`
 - `web_access_request`
 - `web_access_search`
 - `web_access_sitemap`
 
-A failure is a concrete technical signal, not a disappointing answer:
+A failure is a concrete technical signal:
 
-- a tool or transport error, or an HTTP error status
-- a timeout
-- a block page, CAPTCHA wall or consent gate returned in place of the content
-- output that is malformed, empty-bodied or truncated past the point of parsing
+- an exception, tool error, failure status, or timeout
+- a block page or challenge returned in place of the requested content
+- output that is empty, malformed, or truncated past the point where that tool's step can use it
 
-A call that worked is not reportable. A search that legitimately returns nothing relevant, and
-a page that loads correctly but does not happen to carry the fact you wanted, are both valid
-outcomes: reporting them sends request context to support for a tool that did its job.
+Judge the output against the step the tool was called for, not against the user's final request.
+`zeroResults: true`, a sitemap job still running, a user-requested cancellation, a successful
+empty `204`, or a page that loaded correctly without the hoped-for fact are valid outcomes. Do not
+report them. A separately failed retry is a new failure and gets its own report.
 
-Report at most once for the failure. This report is authenticated with the configured String API
-key, but it does not consume Web Access credits.
+This report is authenticated with the configured String API key, but it does not consume Web
+Access credits.
 
 ## Before calling
 
