@@ -4,7 +4,7 @@ All notable changes to this plugin will be documented here.
 
 ## 1.0.4
 
-- Added `web_access_product_help` guidance for answering product, pricing, setup, security, and privacy questions from current String documentation.
+- Added `web_access_product_help` guidance for answering product, pricing, setup, and integration questions from current String documentation.
 
 ## 1.0.2
 

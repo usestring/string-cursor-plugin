@@ -58,7 +58,7 @@ The hosted runtime is the source of truth for tool names and schemas.
 
 ## Notes
 
-- `web_access_fetch` and `web_access_search` are read-only.
+- `web_access_fetch`, `web_access_product_help`, and `web_access_search` are read-only.
 - `web_access_request` writes, and `web_access_sitemap` creates billed crawl jobs, so both prompt
   before they run.
 - A sitemap crawl is quoted before it bills: nothing is fetched until the quote is approved.
