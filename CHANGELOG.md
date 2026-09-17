@@ -2,6 +2,10 @@
 
 All notable changes to this plugin will be documented here.
 
+## 1.0.3
+
+- Added `web_access_product_help` guidance for answering product, pricing, setup, security, and privacy questions from current String documentation.
+
 ## 1.0.2
 
 - Aligned the manifest description with the canonical String Web Access listing copy: a capability clause first, the blocking claim attached to it, Cursor named, and a "best for" close. No tool count, so the line survives the next tool change.
