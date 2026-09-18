@@ -2,8 +2,9 @@
 
 All notable changes to this plugin will be documented here.
 
-## 1.0.3
+## 1.0.4
 
+- Added `web_access_product_help` guidance for answering product, pricing, and integration questions from current String public site pages.
 - Added `web_access_report` guidance for sending one redacted, credit-free diagnostic after a String tool fails.
 
 ## 1.0.2
