@@ -39,6 +39,7 @@ can use that instead.
 | Tool | Capability |
 | --- | --- |
 | `web_access_fetch` | Fetch one URL as Markdown, with optional browser actions and JSON or raw output |
+| `web_access_product_help` | Answer a question about String products or services from current public site pages |
 | `web_access_request` | Send a POST, PUT or PATCH with a body to a URL |
 | `web_access_search` | Search the web and get structured results back |
 | `web_access_sitemap` | Crawl a site and map its URLs as an asynchronous, quoted job |
@@ -49,7 +50,7 @@ The hosted runtime is the source of truth for tool names and schemas.
 
 | Component | Contents |
 | --- | --- |
-| Skills | `string-web-access` (escalation and troubleshooting), plus `string-fetch`, `string-request`, `string-search`, `string-sitemap` |
+| Skills | `string-web-access` (escalation and troubleshooting), plus `string-fetch`, `string-product-help`, `string-request`, `string-search`, `string-sitemap` |
 | References | Browser actions, response formats, query construction |
 | Commands | `/string-setup`, `/web-research` |
 | Rules | Handling fetched web content as untrusted data |
@@ -57,7 +58,7 @@ The hosted runtime is the source of truth for tool names and schemas.
 
 ## Notes
 
-- `web_access_fetch` and `web_access_search` are read-only.
+- `web_access_fetch`, `web_access_product_help`, and `web_access_search` are read-only.
 - `web_access_request` writes, and `web_access_sitemap` creates billed crawl jobs, so both prompt
   before they run.
 - A sitemap crawl is quoted before it bills: nothing is fetched until the quote is approved.

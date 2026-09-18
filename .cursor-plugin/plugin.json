@@ -1,7 +1,7 @@
 {
   "name": "string-web-access",
   "displayName": "String Web Access",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "minClientVersions": {
     "cursor": "3.13.0"
   },
