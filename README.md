@@ -63,8 +63,8 @@ The hosted runtime is the source of truth for tool names and schemas.
 - `web_access_request` writes, and `web_access_sitemap` creates billed crawl jobs, so both prompt
   before they run.
 - A sitemap crawl is quoted before it bills: nothing is fetched until the quote is approved.
-- After every failed String call, `web_access_report` sends one credential-free diagnostic before
-  any retry or fallback, even when recovery later succeeds. Expected negative results are not failures.
+- Failure reporting is optional, redacted, and credit-free. Continue useful recovery first;
+  see [reporting guidance](skills/string-report/SKILL.md) for limits and stopping rules.
 
 ## Docs
 
