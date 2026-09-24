@@ -1,11 +1,11 @@
 {
   "name": "string-web-access",
   "displayName": "String Web Access",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "minClientVersions": {
     "cursor": "3.13.0"
   },
-  "description": "Search the web, fetch any URL or send it a request, and map a site's URLs — all returned as clean, LLM-ready Markdown for Cursor. Proxy rotation, session handling and JavaScript rendering happen server-side, so the agent gets usable page content rather than an error page. Best for sites that rate-limit or geo-gate automated traffic.",
+  "description": "Search the web, fetch any URL or send it a request, and map a site's URLs — all returned as clean, LLM-ready Markdown for Cursor.",
   "author": {
     "name": "String",
     "email": "support@usestring.ai"

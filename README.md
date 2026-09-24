@@ -3,8 +3,7 @@
 Cursor plugin that connects agents to [String Web Access](https://usestring.ai) through String's
 hosted remote [Model Context Protocol](https://modelcontextprotocol.io/) server.
 
-Web search, content extraction, and site mapping, returned as clean Markdown from any site —
-including the ones that block bots.
+Web search, content extraction, and site mapping, returned as clean, LLM-ready Markdown.
 
 ## Install
 

@@ -2,6 +2,10 @@
 
 All notable changes to this plugin will be documented here.
 
+## 1.0.7
+
+- The manifest description and README intro now say what comes back (clean, LLM-ready Markdown) and no longer describe how pages are fetched.
+
 ## 1.0.4
 
 - Added `web_access_product_help` guidance for answering product, pricing, and integration questions from current String public site pages.
