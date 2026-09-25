@@ -2,6 +2,10 @@
 
 All notable changes to this plugin will be documented here.
 
+## 1.0.7
+
+- Search guidance now describes `displayText` and `source` on each result, and notes that `displayUrl` is empty when Google shows no URL line.
+
 ## 1.0.4
 
 - Added `web_access_product_help` guidance for answering product, pricing, and integration questions from current String public site pages.
