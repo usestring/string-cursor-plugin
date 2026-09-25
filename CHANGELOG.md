@@ -5,6 +5,7 @@ All notable changes to this plugin will be documented here.
 ## 1.0.7
 
 - The manifest description and README intro now say what comes back (clean, LLM-ready Markdown) and no longer describe how pages are fetched.
+- Search guidance now describes `displayText` and `source` on each result, and notes that `displayUrl` is empty when Google shows no URL line.
 
 ## 1.0.4
 
