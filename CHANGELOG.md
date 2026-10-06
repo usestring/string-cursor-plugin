@@ -2,6 +2,11 @@
 
 All notable changes to this plugin will be documented here.
 
+## 1.0.8
+
+- Search guidance now covers the optional Google-only `page`, `dateRange` and `sortBy` fields of `web_access_search`.
+- Search guidance now covers `format` on `web_access_search`: `"structured"` (JSON, the default and recommended) or `"raw"` (HTML).
+
 ## 1.0.7
 
 - The manifest description and README intro now say what comes back (clean, LLM-ready Markdown) and no longer describe how pages are fetched.
