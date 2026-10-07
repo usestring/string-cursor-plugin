@@ -2,6 +2,10 @@
 
 All notable changes to this plugin will be documented here.
 
+## 1.0.9
+
+- Search guidance now describes `format: "raw"` as a single HTML page containing all the results, returned as `html`, `htmlBytes` and `htmlTruncated`.
+
 ## 1.0.8
 
 - Search guidance now covers the optional Google-only `page`, `dateRange` and `sortBy` fields of `web_access_search`.
