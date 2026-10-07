@@ -2,6 +2,10 @@
 
 All notable changes to this plugin will be documented here.
 
+## 1.0.10
+
+- Search guidance now says `format: "raw"` returns the Google results page as HTML, one page per call: it supports `page` only, and `searchCount` is rejected with raw.
+
 ## 1.0.9
 
 - Search guidance now describes `format: "raw"` as a single HTML page containing all the results, returned as `html`, `htmlBytes` and `htmlTruncated`.
