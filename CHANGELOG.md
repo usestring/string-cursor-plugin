@@ -2,6 +2,10 @@
 
 All notable changes to this plugin will be documented here.
 
+## 1.0.11
+
+- Search guidance now covers `searchType` on `web_access_search` (Google's images, videos, shopping, books, places and forums tabs, and what each answers in) and the Google filters `safeSearch`, `includeOmittedResults`, `autocorrect`, `restrictCountry` and `verbatim`.
+
 ## 1.0.10
 
 - Search guidance now says `format: "raw"` returns the Google results page as HTML, one page per call: it supports `page` only, and `searchCount` is rejected with raw.
