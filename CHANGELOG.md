@@ -2,6 +2,10 @@
 
 All notable changes to this plugin will be documented here.
 
+## 1.0.12
+
+- The fetch, search, request and web-access skills no longer describe how pages are fetched.
+
 ## 1.0.11
 
 - Search guidance now covers `searchType` on `web_access_search` (Google's images, videos, shopping, books, places and forums tabs, and what each answers in) and the Google filters `safeSearch`, `includeOmittedResults`, `autocorrect`, `restrictCountry` and `verbatim`.
