@@ -2,6 +2,10 @@
 
 All notable changes to this plugin will be documented here.
 
+## 1.0.13
+
+- Search guidance now says the `shopping` tab supplements a web search: for a product, price or merchant question, run an ordinary `web` search too.
+
 ## 1.0.12
 
 - The fetch, search, request and web-access skills no longer describe how pages are fetched.
