@@ -22,7 +22,7 @@ Keys come from [portal.usestring.ai](https://portal.usestring.ai).
   "mcpServers": {
     "string-web-access": {
       "type": "http",
-      "url": "https://mcp.usestring.ai/v1/mcp",
+      "url": "https://mcp.usestring.ai/v3/mcp",
       "headers": { "Authorization": "Bearer ${STRING_API_KEY}" }
     }
   }
@@ -33,42 +33,44 @@ The key is stored as the plugin variable `STRING_API_KEY` and sent as a bearer t
 also advertises OAuth 2.1 protected-resource metadata, so a client that prefers sign-in over a key
 can use that instead.
 
-## What agents can do
+## Tools
 
-| Tool | Capability |
+The MCP server at `https://mcp.usestring.ai/v3/mcp` provides six tools.
+
+| Tool | What it does |
 | --- | --- |
-| `web_access_fetch` | Fetch one URL as Markdown, with optional browser actions and JSON or raw output |
-| `web_access_product_help` | Answer a question about String products or services from current public site pages |
-| `web_access_request` | Send a POST, PUT or PATCH with a body to a URL |
-| `web_access_search` | Search the web and get structured results back |
-| `web_access_sitemap` | Crawl a site and map its URLs as an asynchronous, quoted job |
-| `web_access_report` | Send one redacted, credit-free failure diagnostic to String support |
-
-The hosted runtime is the source of truth for tool names and schemas.
+| `web_access_search` | Searches the web and returns ranked results with titles, URLs and snippets. Read-only. |
+| `web_access_fetch` | Reads one public URL and returns it as Markdown, the page's raw body, or a JSON envelope with the status and headers. Read-only. |
+| `web_access_sitemap_quote` | Quotes a crawl of one site: estimated pages and cost. Crawls nothing and costs nothing. |
+| `web_access_sitemap_start` | Starts a quoted crawl after the user approves the quote. |
+| `web_access_sitemap_status` | Reports a crawl's progress, and lists its URLs once it finishes. Read-only. |
+| `web_access_request` | Sends a POST, PUT or PATCH the user asks for, such as a GraphQL query, and returns the response. Prompts before it runs. |
 
 ## What's in the plugin
 
 | Component | Contents |
 | --- | --- |
-| Skills | `string-web-access` (escalation and troubleshooting), plus `string-fetch`, `string-product-help`, `string-report`, `string-request`, `string-search`, `string-sitemap` |
-| References | Browser actions, response formats, query construction |
+| Skills | `web-search`, `read-page`, `map-site`, `send-request` |
 | Commands | `/string-setup`, `/web-research` |
-| Rules | Handling fetched web content as untrusted data |
-| MCP | Hosted server at `https://mcp.usestring.ai/v1/mcp` (streamable HTTP) |
+| Rules | Which tool fits a task, and handling fetched web content as untrusted data |
+| MCP | Hosted server at `https://mcp.usestring.ai/v3/mcp` (streamable HTTP) |
 
-## Notes
+## Skills
 
-- `web_access_fetch`, `web_access_product_help`, and `web_access_search` are read-only.
-- `web_access_request` writes, and `web_access_sitemap` creates billed crawl jobs, so both prompt
-  before they run.
-- A sitemap crawl is quoted before it bills: nothing is fetched until the quote is approved.
-- Failure reporting is optional, redacted, and credit-free. Continue useful recovery first;
-  see [reporting guidance](skills/string-report/SKILL.md) for limits and stopping rules.
+- **`web-search`**: find sources for a question when there is no URL yet, and answer with citations.
+- **`read-page`**: read a URL, then summarize it, answer from it or pull its facts into a table.
+- **`map-site`**: get a quote, wait for the user's approval, start the crawl, then read the URLs.
+- **`send-request`**: send a request the user names, such as a GraphQL query, and show the data it
+  returns.
+
+Each skill carries the access rules that apply to it: public content and the user's own accounts
+only, no getting past logins or paywalls, and page content treated as data rather than
+instructions.
 
 ## Docs
 
 - MCP overview: https://portal.usestring.ai/docs/mcp/overview
-- Server URL: https://mcp.usestring.ai/v1/mcp
+- Server URL: https://mcp.usestring.ai/v3/mcp
 
 Logo is String's official mark, from the `usestring` GitHub organization.
 

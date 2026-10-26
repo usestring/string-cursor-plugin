@@ -1,7 +1,7 @@
 {
   "name": "string-web-access",
   "displayName": "String Web Access",
-  "version": "1.0.12",
+  "version": "2.0.0",
   "minClientVersions": {
     "cursor": "3.13.0"
   },
@@ -51,7 +51,7 @@
       "STRING_API_KEY": {
         "type": "string",
         "title": "String API key",
-        "description": "Your String Web Access API key, sent as a bearer token to https://mcp.usestring.ai/v1/mcp. Create one at https://portal.usestring.ai."
+        "description": "Your String Web Access API key, sent as a bearer token to https://mcp.usestring.ai/v3/mcp. Create one at https://portal.usestring.ai."
       }
     },
     "required": [
