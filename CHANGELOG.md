@@ -2,6 +2,13 @@
 
 All notable changes to this plugin will be documented here.
 
+## 2.0.0
+
+- The MCP server now points at `https://mcp.usestring.ai/v3/mcp`, which provides six tools: `web_access_search`, a read-only `web_access_fetch`, `web_access_request`, and site mapping split into `web_access_sitemap_quote`, `web_access_sitemap_start` and `web_access_sitemap_status`.
+- Four skills, one per user goal, replace the per-tool skills: `web-search`, `read-page`, `map-site` and `send-request`. `string-product-help`, `string-report`, the browser-actions reference and the `string-web-access` skill are gone, because `/v3` has no product-help, report or browser tool.
+- `/string-setup` checks fetch and search only, and `/web-research` follows the new skills.
+- The rule now maps each kind of task to its tool and keeps the untrusted-content guidance.
+
 ## 1.0.12
 
 - The fetch, search, request and web-access skills no longer describe how pages are fetched.
