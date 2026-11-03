@@ -16,6 +16,11 @@ You have String Web Access tools via MCP. Use them whenever a task needs the liv
   map-site skill). Never start a crawl before the user approves the quote.
 - **A POST, PUT or PATCH the user asks for**, such as a GraphQL query: use `web_access_request`
   (the send-request skill).
+- **A whole task**, such as a cited research answer, places near a location, product prices, what
+  forums say, images or videos, results from a given place, Google's AI answers or a list of every
+  match: follow the matching skill (`research-a-question`, `find-places`, `find-products`,
+  `search-forums`, `find-images-and-videos`, `search-by-location`, `check-ai-answers` and
+  `build-a-list`).
 
 Use only publicly available content and the user's own accounts. Do not try to get past logins,
 paywalls, rate limits, robots.txt rules or other access controls; if a site refuses a request,

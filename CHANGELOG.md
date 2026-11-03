@@ -2,6 +2,10 @@
 
 All notable changes to this plugin will be documented here.
 
+## 2.1.0
+
+- Eight task skills that combine the tools to finish a job: `research-a-question`, `find-places`, `find-products`, `search-forums`, `find-images-and-videos`, `search-by-location`, `check-ai-answers` and `build-a-list`. The tools and the four existing skills are unchanged.
+
 ## 2.0.0
 
 - The MCP server now points at `https://mcp.usestring.ai/v3/mcp`, which provides six tools: `web_access_search`, a read-only `web_access_fetch`, `web_access_request`, and site mapping split into `web_access_sitemap_quote`, `web_access_sitemap_start` and `web_access_sitemap_status`.
