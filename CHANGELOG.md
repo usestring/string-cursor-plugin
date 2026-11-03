@@ -4,7 +4,7 @@ All notable changes to this plugin will be documented here.
 
 ## 2.1.0
 
-- Seven task skills that combine the tools to finish a job: `deep-research`, `read-docs`, `company-research`, `find-local-businesses`, `build-a-list`, `compare-products` and `search-visibility`. The tools and the four existing skills are unchanged.
+- Eight task skills that combine the tools to finish a job: `research-a-question`, `find-places`, `find-products`, `search-forums`, `find-images-and-videos`, `search-by-location`, `check-ai-answers` and `build-a-list`. The tools and the four existing skills are unchanged.
 
 ## 2.0.0
 
