@@ -2,6 +2,10 @@
 
 All notable changes to this plugin will be documented here.
 
+## 2.1.0
+
+- The MCP server now points at `https://mcp.usestring.ai?login`, String's main address with sign-in, which provides eight tools: the six from 2.0.0 plus `web_access_balance` and `web_access_product_help`. The API key still goes in the `Authorization` header.
+
 ## 2.0.0
 
 - The MCP server now points at `https://mcp.usestring.ai/v3/mcp`, which provides six tools: `web_access_search`, a read-only `web_access_fetch`, `web_access_request`, and site mapping split into `web_access_sitemap_quote`, `web_access_sitemap_start` and `web_access_sitemap_status`.
