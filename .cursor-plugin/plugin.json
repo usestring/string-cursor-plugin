@@ -10,7 +10,7 @@
     "name": "String",
     "email": "support@usestring.ai"
   },
-  "homepage": "https://portal.usestring.ai/docs/mcp/overview",
+  "homepage": "https://docs.usestring.ai/mcp/overview",
   "repository": "https://github.com/usestring/string-cursor-plugin",
   "license": "MIT",
   "logo": "assets/logo.png",
