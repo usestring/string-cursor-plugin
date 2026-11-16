@@ -71,7 +71,7 @@ instructions.
 
 ## Docs
 
-- MCP overview: https://portal.usestring.ai/docs/mcp/overview
+- MCP overview: https://docs.usestring.ai/mcp/overview
 - Server URL: https://mcp.usestring.ai?login
 
 Logo is String's official mark, from the `usestring` GitHub organization.
