@@ -10,7 +10,7 @@
     "name": "String",
     "email": "support@usestring.ai"
   },
-  "homepage": "https://portal.usestring.ai/docs/mcp/overview",
+  "homepage": "https://docs.usestring.ai/mcp/overview",
   "repository": "https://github.com/usestring/string-cursor-plugin",
   "license": "MIT",
   "logo": "assets/logo.png",
@@ -51,7 +51,7 @@
       "STRING_API_KEY": {
         "type": "string",
         "title": "String API key",
-        "description": "Your String Web Access API key, sent as a bearer token to https://mcp.usestring.ai/v3/mcp. Create one at https://portal.usestring.ai."
+        "description": "Your String Web Access API key, sent as a bearer token to https://mcp.usestring.ai?login. Create one at https://portal.usestring.ai."
       }
     },
     "required": [

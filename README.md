@@ -22,7 +22,7 @@ Keys come from [portal.usestring.ai](https://portal.usestring.ai).
   "mcpServers": {
     "string-web-access": {
       "type": "http",
-      "url": "https://mcp.usestring.ai/v3/mcp",
+      "url": "https://mcp.usestring.ai?login",
       "headers": { "Authorization": "Bearer ${STRING_API_KEY}" }
     }
   }
@@ -35,7 +35,7 @@ can use that instead.
 
 ## Tools
 
-The MCP server at `https://mcp.usestring.ai/v3/mcp` provides six tools.
+The MCP server at `https://mcp.usestring.ai?login` provides eight tools.
 
 | Tool | What it does |
 | --- | --- |
@@ -45,6 +45,8 @@ The MCP server at `https://mcp.usestring.ai/v3/mcp` provides six tools.
 | `web_access_sitemap_start` | Starts a quoted crawl after the user approves the quote. |
 | `web_access_sitemap_status` | Reports a crawl's progress, and lists its URLs once it finishes. Read-only. |
 | `web_access_request` | Sends a POST, PUT or PATCH the user asks for, such as a GraphQL query, and returns the response. Prompts before it runs. |
+| `web_access_balance` | Reads the account's balance, recorded spend and remaining credit. Free to call. Read-only. |
+| `web_access_product_help` | Answers questions about String's products, pricing and integrations from String's public site, with source links. Read-only. |
 
 ## What's in the plugin
 
@@ -53,7 +55,7 @@ The MCP server at `https://mcp.usestring.ai/v3/mcp` provides six tools.
 | Skills | `web-search`, `read-page`, `map-site`, `send-request`, `research-a-question`, `find-places`, `find-products`, `search-forums`, `find-images-and-videos`, `search-by-location`, `check-ai-answers`, `build-a-list` |
 | Commands | `/string-setup`, `/web-research` |
 | Rules | Which tool fits a task, and handling fetched web content as untrusted data |
-| MCP | Hosted server at `https://mcp.usestring.ai/v3/mcp` (streamable HTTP) |
+| MCP | Hosted server at `https://mcp.usestring.ai?login` (streamable HTTP) |
 
 ## Skills
 
@@ -85,8 +87,8 @@ instructions.
 
 ## Docs
 
-- MCP overview: https://portal.usestring.ai/docs/mcp/overview
-- Server URL: https://mcp.usestring.ai/v3/mcp
+- MCP overview: https://docs.usestring.ai/mcp/overview
+- Server URL: https://mcp.usestring.ai?login
 
 Logo is String's official mark, from the `usestring` GitHub organization.
 
