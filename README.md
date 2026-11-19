@@ -9,11 +9,12 @@ Web search, content extraction, and site mapping, returned as clean, LLM-ready M
 
 1. Open **Cursor Settings → Plugins**.
 2. Search for **String Web Access**.
-3. Click **Install**, then paste a String API key when prompted.
+3. Click **Install**, then sign in with your String account when Cursor asks.
 
 Or run `/add-plugin string-web-access` in chat.
 
-Keys come from [portal.usestring.ai](https://portal.usestring.ai).
+Sign-in uses OAuth, so there is no API key to paste. Don't have an account? Create one at
+[portal.usestring.ai](https://portal.usestring.ai).
 
 ## MCP
 
@@ -22,16 +23,16 @@ Keys come from [portal.usestring.ai](https://portal.usestring.ai).
   "mcpServers": {
     "string-web-access": {
       "type": "http",
-      "url": "https://mcp.usestring.ai?login",
-      "headers": { "Authorization": "Bearer ${STRING_API_KEY}" }
+      "url": "https://mcp.usestring.ai?login"
     }
   }
 }
 ```
 
-The key is stored as the plugin variable `STRING_API_KEY` and sent as a bearer token. The server
-also advertises OAuth 2.1 protected-resource metadata, so a client that prefers sign-in over a key
-can use that instead.
+At this address the server asks for sign-in: Cursor runs String's OAuth flow, and String's consent
+screen picks the API key the connection spends, so you never handle the key. To send a key
+yourself instead, add the server to your own `mcp.json` with
+`"headers": { "Authorization": "Bearer ${env:STRING_API_KEY}" }`.
 
 ## Tools
 

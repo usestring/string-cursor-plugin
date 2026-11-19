@@ -2,6 +2,11 @@
 
 All notable changes to this plugin will be documented here.
 
+## 2.2.0
+
+- The plugin no longer asks for an API key. The MCP server at `https://mcp.usestring.ai?login` signs you in with your String account through Cursor's OAuth support, and String's consent screen picks the key the connection spends. The `STRING_API_KEY` variable and the `Authorization` header are gone, so an install without a key no longer fails.
+- `/string-setup` points at sign-in instead of a key.
+
 ## 2.1.0
 
 - The MCP server now points at `https://mcp.usestring.ai?login`, String's main address with sign-in, which provides eight tools: the six from 2.0.0 plus `web_access_balance` and `web_access_product_help`. The API key still goes in the `Authorization` header.
