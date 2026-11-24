@@ -2,6 +2,10 @@
 
 All notable changes to this plugin will be documented here.
 
+## 2.2.1
+
+- The `read-page` and `send-request` skills no longer tell the agent to send `solveCaptcha: false`, which the tools refuse before any request is made. Their access rules say instead that the connection's String key decides whether a challenge page is attempted, and that a key made at sign-in starts with solving off.
+
 ## 2.2.0
 
 - The plugin no longer asks for an API key. The MCP server at `https://mcp.usestring.ai?login` signs you in with your String account through Cursor's OAuth support, and String's consent screen picks the key the connection spends. The `STRING_API_KEY` variable and the `Authorization` header are gone, so an install without a key no longer fails.
